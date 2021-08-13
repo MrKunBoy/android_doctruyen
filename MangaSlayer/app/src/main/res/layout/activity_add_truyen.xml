@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/bgr2"
+    tools:context=".AddTruyenActivity">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        android:text="Add/Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Nhập tên truyện"
+            android:id="@+id/add_edtten"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:layout_height="40dp"
+            android:hint="Nhập mô tả"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLines="3"
+            android:minLines="1"
+            android:scrollbars="vertical"
+            android:id="@+id/add_edtmota"
+            android:layout_width="match_parent" />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btnCamera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/camera" />
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/add_edtimage"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/imagea" />
+
+            <ImageButton
+                android:layout_marginRight="10dp"
+                android:id="@+id/btnFolder"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/folder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/add_edtyeuthich"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Lượt yêu thích"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/add_edtluotxem"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Lượt xem"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:layout_height="40dp"
+            android:hint="Nhập nội dung"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLines="3"
+            android:minLines="1"
+            android:scrollbars="vertical"
+            android:id="@+id/add_edtnoidung"
+            android:layout_width="match_parent"/>
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:layout_height="40dp"
+            android:hint="Nhập tác giả"
+            android:id="@+id/add_edttacgia"
+            android:layout_width="match_parent"/>
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:layout_height="40dp"
+            android:hint="Nhập thể loại"
+            android:id="@+id/add_edttheloai"
+            android:layout_width="match_parent"/>
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:layout_height="40dp"
+            android:hint="Nhập trình trạng"
+            android:id="@+id/add_edttinhtrang"
+            android:layout_width="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <Button
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="@drawable/bg_bo_btn"
+            android:layout_marginRight="20dp"
+            android:text="Hủy"
+            android:id="@+id/btnhuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="@drawable/bg_bo_btn"
+            android:text="Đồng ý"
+            android:id="@+id/btndongy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

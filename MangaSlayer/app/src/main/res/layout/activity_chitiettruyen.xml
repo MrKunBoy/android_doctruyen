@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr2"
+    tools:context=".ChiTietTruyen">
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="45dp">
+
+        <ImageView
+            android:id="@+id/image_ct"
+            android:layout_width="150dp"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/ten_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_ct"
+            android:text="Tên truyện"
+            android:textColor="#10857F"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_ct"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ten_ct"
+            android:layout_toRightOf="@+id/image_ct"
+            android:background="#65BAA3" />
+
+        <ImageView
+            android:id="@+id/imageyeuthich_ct"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/view_ct"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image_ct"
+            android:src="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/textyeuthich_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_ct"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageyeuthich_ct"
+            android:text="Yêu thích"
+            android:textColor="#F44336" />
+
+        <ImageView
+            android:id="@+id/image1ct"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/imageyeuthich_ct"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image_ct"
+            android:src="@drawable/ic_baseline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/labeltacgiact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageyeuthich_ct"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image1ct"
+            android:text="Tác giả"
+            android:textColor="#878F95" />
+
+        <TextView
+            android:id="@+id/tacgia_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageyeuthich_ct"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/labeltacgiact"
+            android:text="Tác giả"
+            android:textColor="#2196F3" />
+
+        <ImageView
+            android:id="@+id/image2ct"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/image1ct"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image_ct"
+            android:src="@drawable/ic_baseline_local_offer_24" />
+
+        <TextView
+            android:id="@+id/labeltheloaict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image1ct"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image2ct"
+            android:text="Thể loại"
+            android:textColor="#878F95" />
+
+        <TextView
+            android:id="@+id/theloai_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labeltacgiact"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/labeltacgiact"
+            android:text="Thể loại"
+            android:textColor="#2196F3" />
+
+        <ImageView
+            android:id="@+id/image3ct"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/image2ct"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image_ct"
+            android:src="@drawable/ic_baseline_rss_feed_24" />
+
+        <TextView
+            android:id="@+id/labeltinhtrangct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image2ct"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image3ct"
+            android:text="Tình trạng"
+            android:textColor="#878F95" />
+
+        <TextView
+            android:id="@+id/tinhtrang_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image2ct"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/labeltacgiact"
+            android:text="Tình trạng"
+            android:textColor="#878F95" />
+
+        <ImageView
+            android:id="@+id/image4ct"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/image3ct"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image_ct"
+            android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+        <TextView
+            android:id="@+id/labelluotxemct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image3ct"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image4ct"
+            android:text="Lượt xem"
+            android:textColor="#878F95" />
+
+        <TextView
+            android:id="@+id/luotxem_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image3ct"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/labeltacgiact"
+            android:text="Lượt xem"
+            android:textColor="#878F95" />
+<LinearLayout
+    android:id="@+id/row_noidung"
+    android:layout_below="@+id/image_ct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2">
+      <RelativeLayout
+          android:gravity="center"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/textnoidungct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="NỘI DUNG"
+            android:textColor="#0AC1FA" />
+          <View
+              android:id="@+id/view2_ct"
+              android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:layout_below="@+id/textnoidungct"
+              android:background="#0AC1FA"
+              android:layout_marginTop="5dp"/>
+      </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/image_ct"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textnoidungct2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="MỤC LỤC"
+        android:textColor="#0AC1FA" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/noidung_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_noidung"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Nội dung" />
+    </RelativeLayout>
+</RelativeLayout>

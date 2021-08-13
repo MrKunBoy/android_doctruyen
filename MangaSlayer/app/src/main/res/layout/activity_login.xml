@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".LoginActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#856B6B6B" />
+
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_bo_viens"
+            android:padding="10dp"
+            android:src="@drawable/logo1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+<!--    edittext username-->
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_bo_vien">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                app:tint="#fff" />
+            <EditText
+                android:id="@+id/edtname"
+                android:layout_width="match_parent"
+                android:background="#00FFFFFF"
+                android:textSize="20sp"
+                android:maxLength="20"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:hint="@string/user"
+                android:textColorHint="#B8B2B2"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="63dp"/>
+        </RelativeLayout>
+<!--        edittext password-->
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_bo_vien">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/locked"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                app:tint="#fff" />
+            <EditText
+                android:id="@+id/edtpass"
+                android:layout_width="match_parent"
+                android:background="#00FFFFFF"
+                android:textSize="20sp"
+                android:maxLength="20"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                android:hint="@string/pass"
+                android:textColorHint="#B8B2B2"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="63dp"/>
+        </RelativeLayout>
+<!--        button sign in-->
+        <Button
+            android:id="@+id/btnsignin"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_bo_btn"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="@string/signin"
+            android:textAllCaps="false"
+            android:layout_height="50dp" />
+<!--        signup && forget pass-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingBottom="10dp"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/txvsingup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:text="@string/txtsingUp"/>
+            <TextView
+                android:id="@+id/txvforgetPass"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:textColor="#fff"
+                android:text="@string/forgetpass"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Manga Slayer</string>
+    <string name="user">Username</string>
+    <string name="pass">Password</string>
+    <string name="started">Get Started</string>
+    <string name="txtsingUp">Sign Up</string>
+    <string name="forgetpass">Forget Password ?</string>
+    <string name="email">E-mail</string>
+    <string name="signin">Sign in</string>
+    <string name="new_item">Thêm mới truyện</string>
+    <string name="exit">Thoát</string>
+    <string name="reload">Reload</string>
+</resources>
